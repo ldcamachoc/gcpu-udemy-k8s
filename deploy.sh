@@ -12,5 +12,5 @@ docker push ldcamachoc/multi-k8s-worker:$SHA
 
 kubectl apply -f ./k8s
 kubectl set image deployments/server-deployment server=ldcamachoc/multi-k8s-server:$SHA
-kubectl set image deployments/client-deployment server=ldcamachoc/multi-k8s-client:$SHA
-kubectl set image deployments/worker-deployment server=ldcamachoc/multi-k8s-worker:$SHA
+kubectl set image deployments/client-deployment client=ldcamachoc/multi-k8s-client:$SHA
+kubectl set image deployments/worker-deployment worker=ldcamachoc/multi-k8s-worker:$SHA
