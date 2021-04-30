@@ -22,7 +22,7 @@ spec:
           ports:
             - containerPort: 5432          
           env:
-            - name: POSTGRES_PASSWORD
+            - name: pgPassword
               valueFrom:
                 secretKeyRef: 
                   name: pgpassword
