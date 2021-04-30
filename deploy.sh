@@ -1,6 +1,6 @@
-docker build -t ldcamachoc/multi-k8s-client:latest -t ldcamachoc/multi-k8s-client:$SHA  -f ./client/DockerFile ./client
-docker build -t ldcamachoc/multi-k8s-server:latest -t ldcamachoc/multi-k8s-server:$SHA  -f ./server/DockerFile ./server
-docker build -t ldcamachoc/multi-k8s-worker:latest -t ldcamachoc/multi-k8s-worker:$SHA  -f ./client/DockerFile ./worker
+docker build -t ldcamachoc/multi-k8s-client:latest -t ldcamachoc/multi-k8s-client:$SHA  -f ./client/Dockerfile ./client
+docker build -t ldcamachoc/multi-k8s-server:latest -t ldcamachoc/multi-k8s-server:$SHA  -f ./server/Dockerfile ./server
+docker build -t ldcamachoc/multi-k8s-worker:latest -t ldcamachoc/multi-k8s-worker:$SHA  -f ./worker/Dockerfile ./worker
 
 docker push ldcamachoc/multi-k8s-client:latest
 docker push ldcamachoc/multi-k8s-server:latest
